@@ -31,6 +31,16 @@
 
 \renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
 
+% Standard LHCb symbol definitions
+\RequirePackage{xspace}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{ifthen} % for conditional statements
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %True for upright particle symbols
+\input{lhcb-symbols-def}
+
+
 %\usepackage{times} % Uncomment to use the Times New Roman font
 
 %----------------------------------------------------------------------------------------
