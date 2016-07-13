@@ -1,0 +1,227 @@
+%%% Add comments with at least three %%% preceding.
+%%% Add new sections with one % preceding
+%%% Add new subsections with two %% preceding
+
+\def\dllpk     {\ensuremath{\mathrm{DLL}_{\proton\kaon}}\xspace}
+
+%%%%%%%%%%%%%
+% Non standard particles
+%%%%%%%%%%%%%
+% light vectors
+\ifthenelse{\boolean{uprightparticles}}%
+{\def\Prho      {\ensuremath{\uprho}\xspace}
+ \def\Pphi      {\ensuremath{\upphi}\xspace}
+}
+{\def\Prho      {\ensuremath{\rho}\xspace}
+ \def\Pphi      {\ensuremath{\phi}\xspace}
+}
+\def\rhoz   {\ensuremath{\Prho^0}\xspace}
+\def\rhozs  {\ensuremath{\Prho^0\mbox\,\rm{s}}\xspace}
+\def\rhop   {\ensuremath{\Prho^+}\xspace}
+\def\rhom   {\ensuremath{\Prho^-}\xspace}
+\def\phiz   {\ensuremath{\Pphi^0}\xspace}
+\def\phizs  {\ensuremath{\Pphi^0\mbox\,\rm{s}}\xspace}
+\def\had  {\ensuremath{\Ph}\xspace}
+\def\hadp  {\ensuremath{\Ph^+}\xspace}
+\def\hadm  {\ensuremath{\Ph^-}\xspace}
+\def\hadpm  {\ensuremath{\Ph^{\pm}}\xspace}
+\def\hadmp  {\ensuremath{\Ph^{\mp}}\xspace}
+\def\hadprim  {\ensuremath{\had^{\prime}}\xspace}
+\def\hadprimp  {\ensuremath{\had^{\prime+}}\xspace}
+\def\hadprimm {\ensuremath{\had^{\prime-}}\xspace}
+\def\hadprimpm  {\ensuremath{\had^{\prime\pm}}\xspace}
+\def\hadprimmp  {\ensuremath{\had^{\prime\mp}}\xspace}
+
+\def\pipi  {\ensuremath{\pip\pim}\xspace}
+\def\KpKm  {\ensuremath{\Kp \kern -0.16em \Km}\xspace}
+\def\KzKzb {\ensuremath{\Kz \kern -0.16em \Kzb}\xspace}
+
+% heavy vectors
+\def\Bdz      {\ensuremath{\Bd}\xspace}
+\def\Bsz      {\ensuremath{\Bs}\xspace}
+\def\Bdsz      {\ensuremath{\Bz_{(\squark)}}\xspace}
+\def\Dpstarz  {\ensuremath{\D^{(*)0}}\xspace}
+\def\Dpstarzb {\ensuremath{\Dbar^{(*)0}}\xspace}
+\def\Dpstarm  {\ensuremath{\D^{(*)-}_{\squark}}\xspace}
+\def\Dpstarp {\ensuremath{\Dbar^{(*)+}_{\squark}}\xspace}
+\def\Lbz  {\ensuremath{\Lb^{0}}\xspace}
+\def\Lcm  {\ensuremath{\Lc^{-}}\xspace}
+
+\def\kpi       {\ensuremath{\kaon\pion}\xspace}
+\def\kk      {\ensuremath{\Kp\Km}\xspace}
+\def\kppim     {\ensuremath{\Kp\pim}\xspace}
+\def\kmppipm   {\ensuremath{\Kmp\pipm}\xspace}
+\def\kmppipmpiz   {\ensuremath{\Kmp\pipm\piz}\xspace}
+\def\kmppipmpipmpimp {\ensuremath{\Kmp\pipm\pipm\pimp}\xspace}
+\def\kmpip     {\ensuremath{\Km\pip}\xspace}
+
+\def\mumu      {\ensuremath{\mup\mun}\xspace}
+
+\def\pp    {\ensuremath{\proton\proton}\xspace}
+\def\ppbar    {\ensuremath{\proton\antiproton}\xspace}
+
+%%%%%%%%%%%%%
+% Decays
+%%%%%%%%%%%%%
+% B decays (charmless)
+\def\BdtoKzKK   {\decay{\Bd}{\Kz \Kp \Km}}
+\def\BdtoKzPiPi   {\decay{\Bd}{\Kz \pip \pim}}
+\def\BdtoKzKPi   {\decay{\Bd}{\Kz \Kpm \pimp}}
+
+\def\BstoKzKK   {\decay{\Bs}{\Kz \Kp \Km}}
+\def\BstoKzPiPi   {\decay{\Bs}{\Kz \pip \pim}}
+\def\BstoKzKPi   {\decay{\Bs}{\Kz \Kpm \pimp}}
+
+\def\BdstoKzKK   {\decay{\Bdsz}{\Kz \Kp \Km}}
+\def\BdstoKzPiPi   {\decay{\Bdsz}{\Kz \pip \pim}}
+\def\BdstoKzKPi   {\decay{\Bdsz}{\Kz \Kpm \pimp}}
+
+\def\BdtoKsKK   {\decay{\Bd}{\KS \Kp \Km}}
+\def\BdtoKsPiPi   {\decay{\Bd}{\KS \pip \pim}}
+\def\BdtoKsKPi   {\decay{\Bd}{\KS \Kpm \pimp}}
+
+\def\BstoKsKK   {\decay{\Bs}{\KS \Kp \Km}}
+\def\BstoKsPiPi   {\decay{\Bs}{\KS \pip \pim}}
+\def\BstoKsKPi   {\decay{\Bs}{\KS \Kpm \pimp}}
+
+\def\BdstoKsKK   {\decay{\Bdsz}{\KS \Kp \Km}}
+\def\BdstoKsPiPi   {\decay{\Bdsz}{\KS \pip \pim}}
+\def\BdstoKsKPi   {\decay{\Bdsz}{\KS \Kpm \pimp}}
+
+\def\Kshh{\ensuremath{\KS \hadp \hadm}\xspace}
+\def\Kshhp{\ensuremath{\KS \hadp \hadprimm}\xspace}
+\def\KshhpSS{\ensuremath{\KS \hadp \hadprimp}\xspace}
+
+\def\KsPiPi{\ensuremath{\KS \pip \pim}\xspace}
+\def\KsKPi{\ensuremath{\KS \Kpm \pimp}\xspace}
+\def\KsKK{\ensuremath{\KS \Kp \Km}\xspace}
+\def\KsPiP{\ensuremath{\KS \pip \antiproton}\xspace}
+
+\def\BdtoKshhp   {\decay{\Bd}{\KS \hadp \hadprimm}}
+\def\BdtoKshh   {\decay{\Bd}{\KS \hadp \hadm}}
+
+\def\BstoKshhp   {\decay{\Bs}{\KS \hadp \hadprimm}}
+\def\BstoKshh   {\decay{\Bs}{\KS \hadp \hadm}}
+
+\def\BdstoKshhp   {\decay{\Bdsz}{\KS \hadp \hadprimm}}
+\def\BdstoKshh   {\decay{\Bdsz}{\KS \hadp \hadm}}
+
+\def\BdtoKPiPiz {\decay{\Bd}{\Kp \pim \piz}}
+\def\BstoKPiPiz {\decay{\Bs}{\Km \pip \piz}}
+
+\def\BdtoetapKs   {\decay{\Bdz}{\etapr (\to \rhoz \gamma) \KS}}
+\def\ButoDzKtoKsPiPi {\decay{\Bu}{\Dz(\to \KS \pip \pim) \Kp}}
+\def\ButoDzPitoKspipi {\decay{\Bu}{\Dz(\to \KS \pip \pim) \pip}}
+\def\ButoDzPitoKsKK   {\decay{\Bu}{\Dz(\to \KS \Kp \Km) \pip}}
+\def\ButoDstpitoKSPiPi   {\decay{\Bu}{\Dpstarzb(\to \Dzb (\to \KS \pip \pim) \piz ) \pip}}
+\def\BdtoKsPiPiGamma   {\decay{\Bdz}{\KS \pip \pim \gamma}}
+\def\ButoKsPiPiPi   {\decay{\Bu}{\KS \pip \pim \pip}}
+\def\BdtoKstzrhoztoKsPizPiPi   {\decay{\Bdz}{\Kstarz (\to \KS \piz) \rhoz (\to \pip \pim)}}
+\def\BstoKstzPhiztoKsPizKK   {\decay{\Bsz}{\Kstarz (\to \KS \piz) \Pphi (\to \Kp \Km)}}
+\def\BstoKstKstbartoKsPizKPi   {\decay{\Bsz}{\Kstarz (\to \KS \piz) \Kstarzb (\to \Km \pip)}}
+\def\LbtoDsstptoKsPip    {\decay{\Lbz}{\Dpstarm (\to \Dsm (\to \KS \Km)\gamma ) \proton}}
+
+% B decays (charmed, charmonia)
+\def\BdtoPsisChicKs {\decay{\Bd}{(\jpsi,\psitwos,\chic) \KS}}
+\def\BdtoPsiKstoMuMu {\decay{\Bd}{\jpsi(\to \mup \mun) \KS}}
+\def\BdtoPsitwosKs {\decay{\Bd}{\psitwos \KS}}
+\def\BdtoPsisKs {\decay{\Bd}{\jpsi(\psitwos) \KS}}
+\def\BdtoDmhptoKshm {\decay{\Bd}{\Dm(\to \KS \hadm) \hadp}}
+\def\BstoDsmhptoKshm {\decay{\Bs}{\Dsm(\to \KS \hadm) \hadp}}
+\def\BstoDsmKp {\decay{\Bs}{\Dsm \Kp}}
+\def\ButoDsth {\decay{\Bu}{\Dstarm \hadp}}
+\def\ButoDzKtoKsPiPi {\decay{\Bu}{\Dz(\to \KS \pip \pim) \Kp}}
+\def\ButoDzPitoKspipi {\decay{\Bu}{\Dz(\to \KS \pip \pim) \pip}}
+\def\ButoDzPitoKsKK   {\decay{\Bu}{\Dz(\to \KS \Kp \Km) \pip}}
+\def\ButoDstpitoKSPiPi   {\decay{\Bu}{\Dpstarzb(\to \Dzb(\to \KS \pip \pim) \piz ) \pip}}
+\def\LbtoDsstptoKsPip    {\decay{\Lbz}{\Dpstarm (\to \Dsm (\to \KS \Km)\g ) \proton}}
+\def\LbtoDsmptoKshm    {\decay{\Lbz}{\Dsm(\to \KS \hadm) \proton}}
+\def\LbtoDsmptoKsPim    {\decay{\Lbz}{\Dsm(\to \KS \pim) \proton}}
+\def\LbtoLcPitoKspb    {\decay{\Lbz}{\Lcm(\to \KS \antiproton) \pip}}
+
+% b decays
+\def\btou    {\decay{\bquark}{\uquark}}
+\def\btoc    {\decay{\bquark}{\cquark}}
+\def\btos    {\decay{\bquark}{\squark}}
+\def\btod    {\decay{\bquark}{\dquark}}
+
+\def\btoqqbars {\decay{\bquark}{\quark\quarkbar\squark}}
+\def\btossbars {\decay{\bquark}{\squark\squarkbar\squark}}
+\def\btoccbars {\decay{\bquark}{\cquark\cquarkbar\squark}}
+
+%%%%%%%%%%%%%
+% Reconstruciton mode of KS
+%%%%%%%%%%%%%
+\def\LL   {Long\xspace}
+\def\DD   {Downstream\xspace}
+
+%%%%%%%%%%%%%
+% Dalitz variables
+%%%%%%%%%%%%%
+\newcommand{\mPrime}{\ensuremath{\m^{\prime}}\xspace}
+\newcommand{\thPrime}{\ensuremath{\theta^{\prime}}\xspace}
+
+
+%%%%%%%%%%%%%
+% sPlots
+%%%%%%%%%%%%%
+%\newcommand{\splot}{\hbox{$_s$}${\cal P}$lot\xspace}
+
+
+%%%%%%%%%%%%%
+% Branching fractions
+%%%%%%%%%%%%%
+\newcommand{\Br}[1]{\ensuremath{\BF\left(#1\right)}\xspace}
+\def\fsfd {\ensuremath{\frac{f_{\squark}}{f_{\dquark}}}\xspace}
+\def\fsfdinline {\ensuremath{f_{\squark}/f_{\dquark}}\xspace}
+
+%%%%%%%%%%%%%
+% Lumis
+%%%%%%%%%%%%%
+\newcommand{\intlumfb}[1]{\ensuremath{\intlum{#1}\,\invfb}}
+\newcommand{\intlumpb}[1]{\ensuremath{\intlum{#1}\,\invpb}}
+
+
+%%%%%%%%%%%%%
+% Commands
+%%%%%%%%%%%%%
+\newcommand{\eq}[1]{Eq.~\ref{equation : #1}}
+\newcommand{\eqs}[2]{Eqs.~\ref{equation : #1}-\ref{equation : #2}}
+\newcommand{\tab}[1]{Table~\ref{tab : #1}}
+\newcommand{\tabs}[2]{Tables~\ref{tab : #1}-\ref{tab : #2}}
+\newcommand{\tabstwo}[2]{Tables~\ref{tab : #1} and~\ref{tab : #2}}
+\newcommand{\fig}[1]{Fig.~\ref{fig : #1}}
+\newcommand{\figfull}[1]{Figure~\ref{fig : #1}}
+\newcommand{\figstwo}[2]{Figs.~\ref{fig : #1} and~\ref{fig : #2}}
+\newcommand{\figstwofull}[2]{Figures~\ref{fig : #1} and~\ref{fig : #2}}
+\newcommand{\figs}[2]{Figs.~\ref{fig : #1}-\ref{fig : #2}}
+\newcommand{\figsfull}[2]{Figures~\ref{fig : #1}-\ref{fig : #2}}
+\newcommand{\ttst}[1]{\textrm{\scriptsize{#1}}}
+\newcommand{\refsec}[1]{Sect.~\ref{sec : #1}}
+
+
+
+%%%%%%%%%%%%%
+% Categories
+%%%%%%%%%%%%%
+\def\TIS   {\texttt{L0TIS}\xspace}
+\def\TOS   {\texttt{L0TOSOnly}\xspace}
+\def\HltOne   {\texttt{Hlt1TOS}\xspace}
+\def\HltOneTwo   {\texttt{Hlt(1,2)TOS}\xspace}
+
+%%%%%%%%%%%%%
+% Fit parameters
+%%%%%%%%%%%%%
+\newcommand{\fitMeanBd}{\ensuremath{\mu_{\Bd}\xspace}}
+\newcommand{\fitMeanBs}{\ensuremath{\mu_{\Bs}\xspace}}
+
+
+%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%
+
+\def\bender    {\mbox{\textsc{Bender}}\xspace}
+
+\def\argus {ARGUS\xspace}
+
+

@@ -27,10 +27,6 @@
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
 
-\setlength\parindent{0pt} % Removes all indentation from paragraphs
-
-\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
-
 % Standard LHCb symbol definitions
 \RequirePackage{xspace}
 \usepackage{hyperref}
@@ -40,6 +36,12 @@
 \setboolean{uprightparticles}{false} %True for upright particle symbols
 \input{lhcb-symbols-def}
 
+\usepackage{color} % tmp -- Mat
+\usepackage[left=2.5cm,top=3cm,right=2.5cm,bottom=3cm,bindingoffset=0.5cm]{geometry}  %margins
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
 
 %\usepackage{times} % Uncomment to use the Times New Roman font
 
