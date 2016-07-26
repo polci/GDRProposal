@@ -26,6 +26,8 @@
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
+\usepackage{lineno}
+
 
 % Standard LHCb symbol definitions
 \RequirePackage{xspace}
@@ -39,7 +41,8 @@
 \usepackage{color} % tmp -- Mat
 \usepackage[left=2.5cm,top=3cm,right=2.5cm,bottom=3cm,bindingoffset=0.5cm]{geometry}  %margins
 
-\setlength\parindent{0pt} % Removes all indentation from paragraphs
+%\setlength\parindent{0pt} % Removes all indentation from paragraphs
+\setlength\parindent{10pt}
 
 \renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
 
@@ -76,17 +79,20 @@
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
-\include{Introduction}
 
-\include{RareRadSemilep}
+\linenumbers
+
+\include{Introduction}
 
 \include{CPVandCharmless}
 
-\include{HFprodAndSpectro}
+\include{RareRadSemilep}
 
 \include{CharmAndKaon}
 
 \include{LeptonFlavor}
+
+\include{HFprodAndSpectro}
 
 \include{FutureExperiments}
 
